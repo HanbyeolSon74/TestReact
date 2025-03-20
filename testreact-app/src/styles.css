@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-section {
+  display: flex;
+  width: 80%;
+}
+
+.left-section {
+  flex: 1;
+  text-align: center;
+}
+
+.right-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 400px;
+}
+
+.thumbnails img,
+.color-options img {
+  width: 50px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.discounted-price {
+  font-size: 24px;
+  color: red;
+  font-weight: bold;
+}
+
+.cart-btn,
+.buy-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.bottom-section {
+  width: 80%;
+  margin-top: 20px;
+}
