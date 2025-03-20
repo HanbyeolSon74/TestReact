@@ -1,20 +1,17 @@
-import React from "react";
-import { Layout } from "antd";
+import React, { useState } from "react";
 import LeftSection from "./Left";
 import RightSection from "./Right";
 import BottomSection from "./Bottom";
 
-const { Content } = Layout;
-
 const MainPage = () => {
+  const [mainImage, setMainImage] = useState(require("./images/black.jpg"));
+
   return (
-    <Layout style={{ padding: "20px" }}>
-      <Content style={{ display: "flex", gap: "20px" }}>
-        <LeftSection />
-        <RightSection />
-      </Content>
+    <>
+      <LeftSection mainImage={mainImage} setMainImage={setMainImage} />
+      <RightSection setMainImage={setMainImage} />
       <BottomSection />
-    </Layout>
+    </>
   );
 };
 

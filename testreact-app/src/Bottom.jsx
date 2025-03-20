@@ -7,7 +7,7 @@ const productImages = [
   require("./images/yellow.jpg"),
   require("./images/pink.jpg"),
 ];
-
+// 슬라이드 형태로 총 16개 4개씩 보이기
 const BottomSection = () => {
   return (
     <Carousel autoplay>
